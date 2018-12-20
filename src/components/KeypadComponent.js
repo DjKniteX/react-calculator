@@ -6,12 +6,21 @@ class KeypadComponent extends Component {
     const border = {
         border: '3px solid black',
         fontSize: 24,
-        textAlign: 'center'
+        textAlign: 'center',
+        padding: 25,
+    }
+
+    const orange = {
+        border: '3px solid black',
+        padding: 25,
+        fontSize: 24,
+        textAlign: 'center',
+        backgroundColor: 'orange'
     }
     return (
 <div  className="button">
                 <button style={border} name="(" onClick={e => this.props.onClick(e.target.name)}>(</button>
-                <button style={border} name="CE" onClick={e => this.props.onClick(e.target.name)}>CE</button>
+                <button style={orange} name="CE" onClick={e => this.props.onClick(e.target.name)}>CE</button>
                 <button style={border} name=")" onClick={e => this.props.onClick(e.target.name)}>)</button>
                 <button style={border} name="C" onClick={e => this.props.onClick(e.target.name)}>C</button><br/>
 
