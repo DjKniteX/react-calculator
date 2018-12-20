@@ -5,7 +5,7 @@ class ResultComponent extends Component {
       let {result} = this.props;
     return (
       <div className="result">
-            <p>{result}</p>
+            <p style={{fontSize: 36, border: '3px solid black'}}>{result}</p>
         
       </div>
     )
